@@ -1,0 +1,44 @@
+
+/* layout */
+
+.l-container {
+  width: 90%;
+  margin: 128px auto 0;
+  max-width: 760px;
+}
+
+.dropdown-icon {
+  background: #eee;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.menu {
+  background: #eee;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  width: 180px;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.menu.is-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu-item {
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+.menu-item:not(:first-child) {
+  border-top: 1px solid #ddd;
+}
+
+.text {
+  margin-top: 24px;
+}
